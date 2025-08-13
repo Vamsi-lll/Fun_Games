@@ -1,7 +1,41 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
 }
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: skyblue;
+}
+
+.span{
+    height: 30px;
+    width: 30px;
+    font-size: 2rem;
+    animation: fall 5s linear none ;
+    position: absolute;
+}
+@keyframes fall {
+    0%{
+        top: 0%
+    }
+    50%{
+        top: 50%;
+    }
+    100%{
+        top: 92%;
+    }
+}
+.base{
+    background-color: rgba(65, 12, 12, 0.888);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+}
+.basket{
+    position: absolute;
+    bottom: 20px;
+    height: 40px;
+    width: 50px;
+    background-color: brown;
+    left: 50%;
 }
